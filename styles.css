@@ -1,0 +1,51 @@
+body {
+    margin:0%;
+    background-color: aqua;
+    margin: 0 10% 0% 10%;
+}
+
+p{
+    border:1px;
+}
+
+#wrapper{
+    padding: 20px;
+    background-color: blue;
+
+   
+}
+
+.marcas {
+    background-color: white;
+    position:relative;
+	bottom: 0%;
+    padding: 10px 10px 10px 10px;
+    line-height:normal;
+    font-size: small;
+}
+
+.tabela_marcas{
+    width:100%;
+    
+}
+.tabela_marcas th, .tabela_marcas td {
+    border:1px solid black;
+    padding:1ex;
+  }
+
+td{
+    vertical-align:top;
+}
+
+.sub_tabela {
+    border-spacing: 0px;
+}
+
+.sub_tabela th, .sub_tabela td, .sub_tabela tr{
+    padding-left: 0px;
+    border:0px; 
+    margin: 0px;
+    padding:0px;
+}
+
+

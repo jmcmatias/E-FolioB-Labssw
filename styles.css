@@ -19,7 +19,7 @@ p{
     background-color: white;
     position:relative;
 	bottom: 0%;
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
     line-height:normal;
     font-size: small;
 }
@@ -44,7 +44,7 @@ td{
 .sub_tabela th, .sub_tabela td, .sub_tabela tr{
     padding-left: 0px;
     border:0px; 
-    margin: 0px;
+    margin:0px;
     padding:0px;
 }
 

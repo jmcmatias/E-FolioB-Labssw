@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Regas & Piscinas</title>
+        <link rel="stylesheet" type="text/css" href="./styles.css" />
+        <script src="./script.js"></script>
+        
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="header">
+                <h1 style="text-align:center;">Regas</h1>
+                <hr />
+                <div class="menu">
+
+                    <input type="button" class="menu_button"  value="Inicio" onClick="nav_inicio()" />
+                    <input type="button" class="menu_button" value="Piscinas" onClick="nav_piscinas()">
+                    <input type="button" class="menu_button" value="Contactos" onClick="nav_contactos()">
+                </div>
+                <hr />
+            </div>
+            
+            <div class="content">
+                <h2 style="text-align:center;">Alguns dos automatismos utilizados na rega:</h2>
+                <table class="galeria">
+                        <tr>
+                            <th>EQUIPAMENTO</th>
+                            <th>TUTORIAIS</th>
+                        </tr>
+                        <tr>
+                            <td style="text-align:justify">
+                                <h3 style="margin-top:0px; text-align: center;">Hunter X-Core</h3>
+                                <p><img src="../imagens/programador-xcore-801-interior-8-sect-h.jpg" width="200" alt="Hunter X-Core" style="float:left; margin:5px;">
+                                    Este controlador básico fornece o funcionamento simples com a compatibilidade Solar Sync "inteligente". Com o controle 
+                                    de fácil configuração para até 8 estações, incluindo 3 programas e 4 tempos de início cada, o X-Core é a solução perfeita 
+                                    para aplicações residenciais. Ligue o revolucionário sensor Solar Sync e o X-Core é convertido em um "controlador inteligente", 
+                                    que regula os tempos de funcionamento da irrigação com base nas condições climáticas avaliadas localmente. O X-Core também é compatível 
+                                    com os controles remotos da Hunter para ativação rápida de irrigação e sem fios. A instalação, o funcionamento e a manutenção foram 
+                                    concebidas para ser simples, ao mesmo tempo que fornecem uma eficiência e confiabilidade ideais.</p>
+                                
+                            </td>
+                            <td style="vertical-align: middle">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/G84l7dvoAyQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:justify">
+                                <h3 style="margin-top:0px; text-align: center;">Rain Bird RZX</h3>
+                                <p><img src="../imagens/programador-rzx-801-exterior-8-sect-rb.jpg" width="200" alt="Hunter X-Core" style="float:left; margin:5px;">
+                                    O programador ESP-RZXe oferece uma configuração baseada em zonas que é mais fácil de compreender pelos utilizadores inexperientes. 
+                                    Estão disponíveis modelos de 4, 6 e 8 zonas. O ESP-RZXe oferece funcionalidades de programação flexíveis, tornando-o no programador 
+                                    ideal para uma ampla variedade de aplicações de rega, incluindo residenciais e comerciais ligeiros. 
+                                    <h5>Fácil de utilizar: </h5>
+                                    O programador ESP-RZXe foi concebido a pensar na facilidade de utilização. A programação baseada em zonas permite que cada válvula seja
+                                    programada de forma independente;não é necessário explicar “programas” aos utilizadores finais, eliminando praticamente as chamadas telefónicas. 
+                                    O amplo visor LCD apresenta simultaneamente toda a programação para cada zona. A interface do utilizador com base em gráficos simples é fácil de 
+                                    explicar e coloca cada funcionalidade do programador ao seu alcance.
+                                    <h5>Preparado para WiFi LNK2:</h5>
+                                    Combinado com o módulo WI-Fi LNK2 (vendido em separado) da Rain Bird,  pode receber dados meteorológicos com base na Internet que ajustam os programas 
+                                    de rega diariamente, permitindo até 30% de poupança de água.</p>
+                                
+                            </td>
+                            <td style="vertical-align: middle">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/GpA06CZepy8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </td>
+                        </tr>
+                </table>
+            </div>
+            <div style="text-align: center;">
+                <input id="but_comentarios"  type="button" class="menu_button" value="Mostrar Marcas HTML e CSS Utilizadas" onclick="show_hide_comment()">
+            </div>
+        </div>      
+
+       
+        
+        
+        <!-- Inicio da divisória dos comentários ás marcas HTML e CSS -->
+        <div id="comentarios" class="marcas" style="display: none;">
+            <hr />
+            <h2><p>Marcas utilizadas na página:</p></h2>
+            <table class="tabela_marcas">
+                <tr>
+                    <th>HTML</th>
+                    <th>CSS</th>
+                </tr>
+                <tr>
+                    <td id="marcas_html">
+
+                    </td>
+                    <td id="marcas_css">
+
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

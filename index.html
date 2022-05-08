@@ -2,17 +2,53 @@
 
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="styles.css" />
         <title>Regas & Piscinas</title>
+        <link rel="stylesheet" type="text/css" href="./ficheiros/styles.css" />
+        <script src="./ficheiros/script.js"></script>
+        
     </head>
     <body>
         <div id="wrapper">
             <div id="header">
-                <h1>Regas & Piscinas</h1>
+                <h1 style="text-align:center;">Regas & Piscinas</h1>
+                <hr />
+                <div class="menu">
+
+                    <input type="submit" class="menu_button"  value="Regas" onClick="nav_regas()">          
+                    <input type="button" class="menu_button" value="Piscinas" onClick="nav_piscinas()">
+                    <input type="button" class="menu_button" value="Contactos" onClick="nav_contactos()">
+                </div>
+                <hr />
             </div>
-        </div>
-        <hr />
-        <div class="marcas">
+            
+            <div class="content">
+                <h2 style="text-align:center;">Este site apresenta alguns materias de Rega e de Tratamento de piscinas</h2>
+                <table class="galeria">
+                        <tr>
+                            <th>REGA</th>
+                            <th>PISCINAS</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img class="img_gal" src="./imagens/bico rotator.png">
+                            </td>
+                            <td>
+                                <img class="img_gal" src="./imagens/piscina_demo.png">
+                            </td>
+                        </tr>
+                </table>
+            </div>
+            <div style="text-align: center;">
+                <input id="but_comentarios"  type="button" class="menu_button" value="Mostrar Marcas HTML e CSS Utilizadas" onclick="show_hide_comment()">
+            </div>
+        </div>      
+
+       
+        
+        
+        <!-- Inicio da divisória dos comentários ás marcas HTML e CSS -->
+        <div id="comentarios" class="marcas" style="display: none;">
+            <hr />
             <h2><p>Marcas utilizadas na página:</p></h2>
             <table class="tabela_marcas">
                 <tr>
@@ -21,39 +57,40 @@
                 </tr>
                 <tr>
                     <td id="marcas_html">
-                        <p><b>&lt;html&gt;</b> - Contentor para todos os elementos html.</p>
-                        <p><b>&lt;head&gt;</b> - Cabeçalho da página onde estão definidos o título, e os links para os ficheiros de css e e para o de javascript.</p>
-                        <p><b>&lt;link&gt;</b> - Define o relacionamento entre o documento em que é utilizado e uma fonte externa, neste caso para definir o ficheiro externo de estilos.</p>
-                        <p><b>&lt;tittle&gt;</b> - Utilizado para definir o titulo da página.</p>
-                        <p><b>&lt;body&gt;</b> - Define o conteudo do documento HTML que vai ser visivel diretamente na página web.</p>
-                        <p><b>&lt;div&gt;</b> - Define uma divisão ou secção num documento HTML, é utilizado como um contentor para elementos de HTML.</p>
-                        <p><b>&lt;h1&gt;</b> - Define o heading 1, neste caso o titulo no documento que é o mais importante, existem headings de 1 (mais importante) ao 6 (menos importante). Estes headings também são utilizados no SEO (search engine optimization).</p>
-                        <p><b>&lt;hr /&gt;</b> - Define uma regra horizontal, delinea uma separação de temas ou tópicos, utilizado para separação entre o conteúdo da página.</p>
-                        <p><b>&lt;/br&gt;</b> - Define uma quebra de linha, utilizada para mudar de linha no caso da explicação da margin na tabela de marcas utilizadas em CSS.</p>
-                        <p><b>&lt;table&gt;</b> - Define uma tabela HTML, esta é constituida por uma &lt;table&gt; e um ou mais elementos, em que &lt;tr&gt; define uma linha, &lt;th&gt; define um cabeçalho da tabela e &lt;td&gt; define uma célula da tabela, esta marca e seus elementos foram utilizadas na criação desta tabela.</p>
+                        <p><b>&lt;html&gt; - </b>Contentor para todos os elementos html.</p>
+                        <p><b>&lt;head&gt; - </b>Cabeçalho da página onde estão definidos o título, e os links para os ficheiros de css e e para o de javascript.</p>
+                        <p><b>&lt;link&gt; - </b>Define o relacionamento entre o documento em que é utilizado e uma fonte externa, neste caso para definir o ficheiro externo de estilos.</p>
+                        <p><b>&lt;tittle&gt; - </b>Utilizado para definir o titulo da página.</p>
+                        <p><b>&lt;body&gt; - </b>Define o conteudo do documento HTML que vai ser visivel diretamente na página web.</p>
+                        <p><b>&lt;div&gt; - </b>Define uma divisão ou secção num documento HTML, é utilizado como um contentor para elementos de HTML em diversas partes da página, por exemplo no menu.</p>
+                        <p><b>&lt;h1&gt; - </b>Define o heading 1, neste caso o titulo no documento que é o mais importante, existem headings de 1 (mais importante) ao 6 (menos importante). Estes headings também são utilizados no SEO (search engine optimization).</p>
+                        <p><b>&lt;input type="button"&gt; - </b>Define uma entrada(input), neste caso um botão, utilizado no menu</p>
+                        <p><b>&lt;hr /&gt; - </b>Define uma regra horizontal, delinea uma separação de temas ou tópicos, utilizado para separação entre o conteúdo da página e os comentários das marcas utilizadas.</p>
+                        <p><b>&lt;/br&gt; - </b>Define uma quebra de linha, utilizada para mudar de linha no caso da explicação da margin na tabela de marcas utilizadas em CSS.</p>
+                        <p><b>&amp;nbps; - </b>Adiciona um espaço que não quebra a linha no texto, utilizado no texto margin na secção de comentarios CSS</p>
+                        <p><b>&lt;table&gt; - </b>Define uma tabela HTML, esta é constituida por uma &lt;table&gt; e um ou mais elementos, em que &lt;tr&gt; define uma linha, &lt;th&gt; define um cabeçalho da tabela e &lt;td&gt; define uma célula da tabela, esta marca e seus elementos foram utilizadas na criação desta tabela.</p>
                     </td>
                     <td id="marcas_css">
-                        <p><b>background-color: "nome da côr"; - </b>Utilizado para definir a côr do fundo, por exemplo do body.</p>
+                        <p><b>background-color:indigo; - </b>Utilizado para definir a côr de fundo do body para a côr indigo.</p>
                         <table class="sub_tabela">
                             <td>
                                 <b>margin: &nbsp;</b>
                             </td>
                             <td>
-                                <b>0 10% 0% 10%</b> - Utilizado para definir as margens pela ordem: superior|direita|inferior|esquerda, neste caso no body de forma a que todos os marcadores hererditários do body mantenham estes valores </br>
-                                <b>0%</b> - Utilizado para definir todas as margens como 0 neste caso foi utilizado na classe sub_tabela
+                                <b>0 10% 0% 10%;</b> - Utilizado para definir as margens pela ordem: superior|direita|inferior|esquerda, neste caso no body de forma a que todos os marcadores hererditários do body se encontrem dentro destes limites </br>
+                                <b>0%;</b> - Utilizado para definir todas as margens como 0 neste caso foi utilizado na classe sub_tabela
                             </td>
                         </table>
-                        <p>
-                            <table class="sub_tabela">
-                                <td>
-                                    <b>padding:&nbsp;</b>
-                                </td>
-                                <td>
-                                    <b>20px; </b>- Utilizado para definir todos as margens interiores para 20px</br>
-                                    <b>10px 10px 10px 10px; </b>- Utilizado para definir todos as margens interiores para 20px
-                                </td>
-                            </table>
-                        </p>
+                        <p><b>padding: 20px; - </b>Utilizado para definir a margem interna da div com id wrapper para 20 pixeis.</p>
+                        <p><b>height: 1.5em; - </b>Utilizado para definir altura da classe menu para 1.5 vezes o tamanho da fonte do elemento corrente.</p>
+                        <p><b>width: auto; - </b>Utilizado para definir a largura automática nos botões do menu.</p>
+                        <p><b>border: 0px; - </b>Utilizado para definir linha de fronteira nos botões, neste caso sem linha.</p>
+                        <p><b>hover - </b>Utilizado para produzir um efeito ao colocar o ponteiro do rato em cima do elemento, neste caso para mudar a côr de fundo e da fonte dos botões.</p>
+                        <p><b>active - </b>Utilizado para produzir um efeito ao clicar em cima do elemento, neste caso para mudar a côr de fundo.</p>
+                        <p><b>color: azure; - </b>Utilizado para mudar a côr do texto dos botões do menu para azure ao pairar como ponteiro do rato por cima destes.</p>
+                        <p><b>line-height: normal; - </b>Utilizado nos comentários ás marcas para definir a altura da quebra de linha.</p>
+                        <p><b>font-size: small; - </b>Utilizado nos comentários ás marcas para definir o tamanho da fonte para pequeno.</p>
+                        <p><b>vertical-align: top; - </b>Utilizado nos comentários ás marcas para forçar o texto a ficar alinhado no topo na célula da tabela.</p>
                     </td>
                 </tr>
             </table>

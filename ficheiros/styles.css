@@ -1,0 +1,93 @@
+body {
+  margin: 0%;
+  background-color: indigo;
+  margin: 0 10% 0% 10%;
+}
+
+body::-webkit-scrollbar{
+  width: 0px;
+}
+
+#wrapper {
+  padding: 20px;
+  background-color:lightgray;
+}
+
+.content {
+  margin-bottom: 2em;
+}
+
+/* Menu */
+.menu {
+  height: 1.5em;
+}
+
+/* Botões Menu */
+.menu_button {
+  background-color: azure;
+  height: 2em;
+  width: auto;
+  padding: 5px;
+  border: 0px;
+  margin: 0px;
+}
+
+.menu_button:hover {
+  background-color: grey;
+  color: azure;
+}
+
+.menu_button:active {
+  background-color:indigo;
+}
+
+/* Galeria Imagens */
+
+.galeria {
+  width: 100%;
+  border: 1px solid black;
+}
+.galeria th,
+.galeria td {
+  border: 1px solid black;
+  padding: 1ex;
+  text-align: center;
+  vertical-align: top;
+}
+
+.img_gal{
+  width:540px;
+}
+
+
+/* css para a div dos comentários ás marcas */
+.marcas {
+  background-color: white;
+  position: relative;
+  bottom: 0%;
+  padding: 10px;
+  line-height: normal;
+  font-size: small;
+}
+
+.tabela_marcas {
+  width: 100%;
+}
+.tabela_marcas th,
+.tabela_marcas td {
+  border: 1px solid black;
+  padding: 1ex;
+}
+
+td {
+  vertical-align: top;
+}
+
+.sub_tabela th,
+.sub_tabela td,
+.sub_tabela tr {
+  padding-left: 0px;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}

@@ -71,8 +71,6 @@ body::-webkit-scrollbar {
 /* css para a div dos comentários ás marcas */
 .marcas {
   background-color: white;
-  position: relative;
-  bottom: 0%;
   padding: 10px;
   line-height: normal;
   font-size: small;
@@ -117,8 +115,9 @@ td {
   background-color: dodgerblue;
   height: 80px;
   width: 80px;
+  font-size:x-large;
   font-style: italic;
-  font-weight: bold;
+  font-weight:900;
   user-select: none;
 }
 

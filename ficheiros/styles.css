@@ -3,6 +3,7 @@ body {
   margin: 0%;
   background-color: indigo;
   margin: 0 10% 0% 10%;
+  font-family: system-ui;
 }
 
 body::-webkit-scrollbar {
@@ -20,7 +21,7 @@ body::-webkit-scrollbar {
 
 /* Menu */
 .menu {
-  height: 1.5em;
+  height: 2.5em;
 }
 
 /* Botões Menu */
@@ -31,6 +32,10 @@ body::-webkit-scrollbar {
   padding: 5px;
   border: 0px;
   margin: 0px;
+  font-family:'Courier New', Courier, monospace;
+  font-weight:bolder;
+  font-size:larger;
+
 }
 
 .menu_button:hover {
@@ -73,12 +78,14 @@ body::-webkit-scrollbar {
   background-color: white;
   padding: 10px;
   line-height: normal;
+  font-family:Arial, Helvetica, sans-serif;
   font-size: small;
 }
 
 .tabela_marcas {
   width: 100%;
 }
+
 .tabela_marcas th,
 .tabela_marcas td {
   border: 1px solid black;
@@ -102,7 +109,7 @@ td {
 
 /* Botão flutuante contactos */
 
-#floating_contacts {
+#floating_info {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -121,11 +128,10 @@ td {
   user-select: none;
 }
 
-#floating_contacts:hover {
+#floating_info:hover {
   background-color: rgb(31, 118, 206);
 }
 
-#floating_contacts:active {
+#floating_info:active {
   border: 6px inset lightblue;
-  background-color: indigo;
 }

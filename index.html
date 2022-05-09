@@ -13,7 +13,6 @@
                 <h1 style="text-align:center;">Regas & Piscinas</h1>
                 <hr />
                 <div class="menu">
-
                     <input type="button" class="menu_button" value="Regas" onClick="nav_regas()">          
                     <input type="button" class="menu_button" value="Piscinas" onClick="nav_piscinas()">
                     <input type="button" class="menu_button" value="Contactos" onClick="nav_contactos()">
@@ -70,7 +69,7 @@
                         <p><b>&lt;/br&gt; - </b>Define uma quebra de linha, utilizada para mudar de linha no caso da explicação da margin na tabela de marcas utilizadas em CSS.</p>           
                         <p><b>&lt;table&gt; - </b>Define uma tabela HTML, esta é constituida por uma &lt;table&gt; e um ou mais elementos, em que &lt;tr&gt; define uma linha, &lt;th&gt; define um cabeçalho da tabela e &lt;td&gt; define uma célula da tabela, esta marca e seus elementos foram utilizadas na criação desta tabela.</p>
                         <hr />
-                        <h4>Entidades HTML</h4>
+                        <h4>Carateres especiais HTML</h4>
                         <p><b>&amp;nbps; - </b>Adiciona um espaço que não quebra a linha no texto, utilizado no texto margin na secção de comentarios CSS</p>
                         <p><b>&amp;lt; - </b>Escreve um sinal de menor (lt - less than), utilizado nos comentários das marcas HTML.</p>
                         <p><b>&amp;gt; - </b>Escreve um sinal de maior (gt - less than), utilizado nos comentários das marcas HTML.</p>
@@ -88,7 +87,7 @@
                             </td>
                         </table>
                         <p><b>padding: 20px; - </b>Utilizado para definir a margem interna da div com id wrapper para 20 pixeis.</p>
-                        <p><b>height: 1.5em; - </b>Utilizado para definir altura da classe menu para 1.5 vezes o tamanho da fonte do elemento corrente.</p>
+                        <p><b>height: 2.5em; - </b>Utilizado para definir altura da classe menu para 1.5 vezes o tamanho da fonte do elemento corrente.</p>
                         <p><b>width: auto; - </b>Utilizado para definir a largura automática nos botões do menu.</p>
                         <p><b>max-width: 100%; - </b>Define uma largura dinâmica, neste caso para utilizar a largura disponivel, ao juntar height: auto, obtive o efeito desejado de adaptar o tamanho das imagens ao tamanho da janela do browser, também utilizado nos videos embebidos do youtube na página rega.html</p>
                         <p><b>border: 0px; - </b>Utilizado para definir linha de fronteira nos botões, neste caso sem linha.</p>
@@ -97,7 +96,6 @@
                         <p><b>active - </b>Utilizado para produzir um efeito ao clicar em cima do elemento, neste caso para mudar a côr de fundo.</p>
                         <p><b>color: azure; - </b>Utilizado para mudar a côr do texto, neste caso dos botões do menu para azure ao pairar como ponteiro do rato por cima destes.</p>
                         <p><b>line-height: normal; - </b>Utilizado nos comentários ás marcas para definir a altura da quebra de linha.</p>
-                        <p><b>font-size: small; - </b>Utilizado nos comentários ás marcas para definir o tamanho da fonte para pequeno.</p>
                         <p><b>text-align: center; - </b>Coloca elementos no centro horizontal de um elemento pai tipo block (div,table etc), aplica-se neste caso aos elementos inline-block da galeria</p>
                         <p><b>vertical-align: top; - </b>Utilizado nos comentários ás marcas para forçar o texto a ficar alinhado no topo na célula da tabela.</p>
                         <p><b>body::-webkit-scrollbar; - </b>Pseudo-elemento utilizado para configurar o estilo da barra de scroll do browser, utilizado com width: 0px de forma a que não apareça a barra de scroll, desta forma não há deslocamentos na página ao abrir as marcas utilizadas.</p>
@@ -107,6 +105,7 @@
                         <p><b>z-index: 1; - </b>Especifica a ordem nas camadas (eixo z) do elemento, utilizado para que o botão Info fique sempre por cima de todos os elementos da página.</p>
                         <p><b>position: fixed; - </b>Coloca o elemento numa posição fixa na página, utilizado no botão Info.</p>
                         <p><b>bottom: 50px; e right: 50px;</b>Define a posição de um elemento, neste caso do elemento fixo que é o botão info a 50 pixeis do limite inferior e 50 pixeis do limite direito da página.</p>
+                        <p><b>font-family: system-ui; - </b>Define a famile de fontes do elemento, neste caso coloca todo o body com a familia system-ui.</p>
                         <p><b>font-size: x-large; - </b>Define o tamanho da fonte do botão Info para extra grande.</p>
                         <p><b>font-style: italic; - </b>Coloca a fonte do botão Info em itálico.</p>
                         <p><b>font-weight:900; - </b>Define a espessura (bold) da fonte do botão Info para 900.</p>
@@ -115,7 +114,7 @@
                 </tr>
             </table>
         </div>
-        <!--Botão de contactos-->
-        <input type="button" id="floating_contacts" value="Info" onclick="nav_contactos()">
+        <!--Botão Info-->
+        <input type="button" id="floating_info" value="Info" onclick="nav_info()">
     </body>
 </html>

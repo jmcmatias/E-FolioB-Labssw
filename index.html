@@ -4,7 +4,7 @@
     <head>
         <title>Regas & Piscinas</title>
         <link rel="stylesheet" type="text/css" href="./ficheiros/styles.css" />
-        <script src="./ficheiros/script.js"></script>
+        <script type="text/javascript" src="./ficheiros/script.js"></script>
         
     </head>
     <body>
@@ -13,9 +13,9 @@
                 <h1 style="text-align:center;">Regas & Piscinas</h1>
                 <hr />
                 <div class="menu">
-                    <input type="button" class="menu_button" value="Regas" onClick="nav_regas()">          
-                    <input type="button" class="menu_button" value="Piscinas" onClick="nav_piscinas()">
-                    <input type="button" class="menu_button" value="Contactos" onClick="nav_contactos()">
+                    <input type="button" class="menu_button" value="REGAS" onClick="nav_regas()">          
+                    <input type="button" class="menu_button" value="PISCINAS" onClick="nav_piscinas()">
+                    <input type="button" class="menu_button" value="CONTACTOS" onClick="nav_contactos()">
                 </div>
                 <hr />
             </div>
@@ -40,11 +40,8 @@
             <div style="text-align: center;">
                 <input id="but_comentarios"  type="button" class="menu_button" value="Mostrar Marcas HTML e CSS Utilizadas" onclick="show_hide_comment()">
             </div>
-        </div>      
-
+        </div>
        
-        
-        
         <!-- Inicio da divisória dos comentários ás marcas HTML e CSS -->
         <div id="comentarios" class="marcas" style="display: none;">
             <hr />
@@ -59,7 +56,8 @@
                         <p><b>&lt;!DOCTYPE html&gt; - </b>Não é propriamente uma marca, é uma declaração que informa o browser do tipo de documento, neste caso HTML 5.</p>
                         <p><b>&lt;html&gt; - </b>Contentor para todos os elementos html.</p>
                         <p><b>&lt;head&gt; - </b>Cabeçalho da página onde estão definidos o título, e os links para os ficheiros de css e e para o de javascript.</p>
-                        <p><b>&lt;link&gt; - </b>Define o relacionamento entre o documento em que é utilizado e uma fonte externa, neste caso para definir o ficheiro externo de estilos.</p>
+                        <p><b>&lt;link&gt; - </b>Define o relacionamento entre o documento em que é utilizado e uma fonte externa, neste caso para definir o ficheiro externo de estilos com, &lt;link&nbsp;rel="stylesheet"&nbsp;type="text/css"&nbsp;href="./ficheiros/styles.css"&nbsp;/&gt;.</p>
+                        <p><b>&lt;script&gt; - </b>Inclui um script de javascript, neste caso para um ficheiro externo com, &lt;script&nbsp;type="text/javascript"&nbsp;src="./ficheiros/script.js"&gt;&lt;/script&gt;.</p>
                         <p><b>&lt;tittle&gt; - </b>Utilizado para definir o titulo da página.</p>
                         <p><b>&lt;body&gt; - </b>Define o conteudo do documento HTML que vai ser visivel diretamente na página web.</p>
                         <p><b>&lt;div&gt; - </b>Define uma divisão ou secção num documento HTML, é utilizado como um contentor para elementos de HTML em diversas partes da página, por exemplo no menu.</p>
@@ -70,7 +68,7 @@
                         <p><b>&lt;table&gt; - </b>Define uma tabela HTML, esta é constituida por uma &lt;table&gt; e um ou mais elementos, em que &lt;tr&gt; define uma linha, &lt;th&gt; define um cabeçalho da tabela e &lt;td&gt; define uma célula da tabela, esta marca e seus elementos foram utilizadas na criação desta tabela.</p>
                         <hr />
                         <h4>Carateres especiais HTML</h4>
-                        <p><b>&amp;nbps; - </b>Adiciona um espaço que não quebra a linha no texto, utilizado no texto margin na secção de comentarios CSS</p>
+                        <p><b>&amp;nbsp; - </b>Adiciona um espaço que não deixa quebrar a linha no texto, utilizado nos comentários das marcas link e script de forma a não deixar quebrar a linha a meio da instrução</p>
                         <p><b>&amp;lt; - </b>Escreve um sinal de menor (lt - less than), utilizado nos comentários das marcas HTML.</p>
                         <p><b>&amp;gt; - </b>Escreve um sinal de maior (gt - less than), utilizado nos comentários das marcas HTML.</p>
                         <p><b>&amp;amp; - </b>Escreve um &.</p>
@@ -90,7 +88,7 @@
                         <p><b>height: 2.5em; - </b>Utilizado para definir altura da classe menu para 1.5 vezes o tamanho da fonte do elemento corrente.</p>
                         <p><b>width: auto; - </b>Utilizado para definir a largura automática nos botões do menu.</p>
                         <p><b>max-width: 100%; - </b>Define uma largura dinâmica, neste caso para utilizar a largura disponivel, ao juntar height: auto, obtive o efeito desejado de adaptar o tamanho das imagens ao tamanho da janela do browser, também utilizado nos videos embebidos do youtube na página rega.html</p>
-                        <p><b>border: 0px; - </b>Utilizado para definir linha de fronteira nos botões, neste caso sem linha.</p>
+                        <p><b>border: 2px outset lightblue; - </b>Utilizado para definir a linha de fronteira de um elemento, neste o contorno da galeria com 2 pixeis de espessura um outset (efeito que simula sombra) e a definição da cor lightblue.</p>
                         <p><b>border-radius: 5px; - </b>Define o raio dos cantos do elemento, utilizado arredondar os cantos das tabelas da galeria.</p>
                         <p><b>hover - </b>Seletor utilizado para produzir um efeito ao colocar o ponteiro do rato em cima do elemento, neste caso para mudar a côr de fundo e da fonte dos botões.</p>
                         <p><b>active - </b>Utilizado para produzir um efeito ao clicar em cima do elemento, neste caso para mudar a côr de fundo.</p>

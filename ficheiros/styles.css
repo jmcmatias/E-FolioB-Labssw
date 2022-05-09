@@ -6,22 +6,61 @@ body {
   font-family: system-ui;
 }
 
-body::-webkit-scrollbar {
-  width: 0px;
-}
-
 #wrapper {
   padding: 20px;
   background-color: lightgray;
+}
+
+#header{
+  height: max-content;
 }
 
 .content {
   margin-bottom: 2em;
 }
 
+ol.ordem_letras,
+ul.sem_ordem {
+  padding-left:20px;
+}
+
+.nota_importante {
+  border-left: 4px solid indigo;
+  background-color: silver;
+  padding:5px;
+}
+
+table.quadros td,
+table.quadros th,
+table.quadros{
+  border: 2px solid black;
+  text-align: center;
+  padding:2px;
+  border-collapse:collapse;
+  border-spacing: 0px;
+}
+
+table.quadros{
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+
+tr.titulo{
+  background-color: silver;
+}
+
 /* Menu */
 .menu {
+  display: inline-block;
+  margin: 2px 10px 2px 10px;
   height: 2.5em;
+
+}
+
+.nav_menu {
+  display: inline-block;
+  height: 1.5em;
 }
 
 /* Botões Menu */
@@ -35,7 +74,10 @@ body::-webkit-scrollbar {
   font-family:'Courier New', Courier, monospace;
   font-weight:bolder;
   font-size:larger;
+}
 
+#nav.menu_button{
+  font-size: 0.7em;
 }
 
 .menu_button:hover {
@@ -47,6 +89,31 @@ body::-webkit-scrollbar {
   background-color: indigo;
 }
 
+/* Botão calcular (calculo volumes) */
+#bot_calcular{
+  height: 2em;
+  font-size:smaller;
+}
+
+/* Formulário de volumes */
+.form_vol {
+  border-radius: 3px;
+  background-color: blanchedalmond;
+  width: 5em;
+}
+
+.calculos{
+  background-color:silver;
+  padding:10px;
+  border-radius: 5px;
+}
+
+#resultado{
+  font-style: oblique;
+  text-decoration: underline;
+  font-weight: 900;
+}
+
 /* Galeria Imagens/Videos */
 
 .galeria {
@@ -54,9 +121,9 @@ body::-webkit-scrollbar {
 }
 .galeria th,
 .galeria td {
-  background-color: lightcyan;
+  background-color: silver;
   border-radius: 5px;
-  border: 2px outset lightblue;
+  border: 2px outset lightgray;
   padding: 1ex;
   text-align: center;
   vertical-align: top;

@@ -11,33 +11,426 @@
         <div id="wrapper">
             <div id="header">
                 <h1 style="text-align:center;">Piscinas</h1>
-                <hr />
+                
+                <hr/>
                 <div class="menu">
-
-                    <input type="button" class="menu_button"  value="Inicio" onClick="nav_inicio()" />
-                    <input type="button" class="menu_button" value="Regas" onClick="nav_regas()">
-                    <input type="button" class="menu_button" value="Contactos" onClick="nav_contactos()">
+                    <input type="button" class="menu_button"  value="INICIO" onClick="nav_inicio()" />
+                    <input type="button" class="menu_button" value="REGAS" onClick="nav_regas()">
+                    <input type="button" class="menu_button" value="CONTACTOS" onClick="nav_contactos()">
                 </div>
-                <hr />
+                <hr/>
+                <div class="nav_menu">
+                    <input type="button" id="nav" class="menu_button"  value="2-REGRAS BÁSICAS (Cálculo Volumes)" onClick="scroll_into('p2')" />
+                    <input type="button" id="nav" class="menu_button"  value="3-FORNECIMENTO DE ÁGUA" onClick="scroll_into('p3')" />
+                    <input type="button" id="nav" class="menu_button"  value="4-TRATAMENTO DE ÁGUA" onClick="scroll_into('p4')" />
+                    <input type="button" id="nav" class="menu_button"  value="5-CONTROLO DE QUALIDADE" onClick="scroll_into('p5')" />
+                    <input type="button" id="nav" class="menu_button"  value="6-RESOLUÇÃO DE ALGUNS PROBLEMAS" onClick="scroll_into('p6')" />
+                    <input type="button" id="nav" class="menu_button"  value="7-PREPARAÇÃO PARA O INVERNO" onClick="scroll_into('p7')" />
+                </div>
+                    <br><span style="font: x-small lighter; ">*Navegação na Página*</span>
+                <hr/>
             </div>
-            
+          
+            <!-- Inicio da secção de Conteudos -->
             <div class="content">
-                <h2 style="text-align:center;">Este site apresenta alguns materias de Rega e de Tratamento de piscinas</h2>
-                <table class="galeria">
-                        <tr>
-                            <th>REGA</th>
-                            <th>PISCINAS</th>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img class="img_gal" src="./imagens/bico rotator.png">
-                            </td>
-                            <td>
-                                <img class="img_gal" src="./imagens/piscina_demo.png">
-                            </td>
-                        </tr>
-                </table>
+                <h2 style="text-align:center;">Tratamento de Água de Piscinas</h2>
+                <h5 style="text-align:justify">&emsp;Existem algumas formas de tratar a água de uma piscina, com sistemas ativos de doseamento de cloro (Hipoclorito de Sódio), com sistemas de eletrólise para a produção de cloro através do sal, com ultra-violetas e com sistemas de pastilhas Multiações. Iremos de seguida mostrar alguns desses sistemas. <br>
+                Mas primeiro vamos conhecer alguns pontos chave necessários para podermos construir uma piscina e efetuar um tratamento eficiente da água.</h5>
+                <h6>As informações seguintes podem ser encontradas no documento facultado pelo instituto português da qualidade 
+                    <span style="font-weight:bolder; font-size:large;">&rarr;</span> 
+                    <a href="http://www1.ipq.pt/PT/IPQ/Publicacoes/PublicacoesDownload/Documents/Recomendacoes%20Piscinas%20Domesticas.pdf" 
+                       target="blank">RECOMENDAÇÕES PARA MANTER A QUALIDADE DA ÁGUA DE PISCINAS DOMÉSTICAS</a></h6>
+                <hr/>
+                <div style="text-align: justify;">
+                    <ol>
+                        <h3 id="p1"><li>INTRODUÇÃO</li></h3>
+                        <p>O primeiro cuidado a ter, quando se pretende adquirir ou construir uma piscina, é a sua localização.
+                        Além da previsão do espaço superficial que irá ocupar, deverão ter-se também em conta outros
+                        aspetos, nomeadamente, a dimensão e a forma, bem como despesas para adequada manutenção e
+                        cuidados a ter para poder usufruir de um espaço agradável de lazer em condições adequadas de
+                        segurança, minimizando os riscos de acidentes e de saúde pública.<br>
+                        Se houver necessidade de fazer escavação do terreno, deve ter-se em conta também:</p>
+                        <ul>
+                            <li>a consistência do terreno, nomeadamente a possibilidade de haver rocha;</li>
+                            <li>cabos elétricos; condutas de água, gás ou esgotos; raízes de árvores, etc.</li>
+                        </ul>
+                        <p>As piscinas com baixo nível de manutenção podem criar sérios riscos para a saúde dos utilizadores.
+                        Os seres humanos, animais e meio ambiente podem contaminar as piscinas com microrganismos
+                        infecciosos. Na maioria dos casos estes microrganismos podem causar doenças sem gravidade, mas
+                        algumas infeções podem ser graves ou potencialmente fatais.<br>
+                        Este guia focaliza-se na qualidade da água de piscinas exteriores de água doce de uso privado e
+                        sua manutenção, sem pretender minimizar a importância das regras de segurança e outros
+                        cuidados, especialmente a utilização por crianças, isolamento da corrente elétrica para iluminação
+                        ou para equipamentos anexos.
+                        </p> 
+                        <hr/>
+                        <h3 id="p2"><li>REGRAS BÁSICAS</li></h3>
+                        
+                            <ol type="A" class="ordem_letras">
+                                <li>Sempre que possível, a piscina deve localizar-se em zona resguardada, de modo a evitar ou
+                                    minimizar a sua contaminação por sujidades do ambiente externo, como folhas de árvore,
+                                    animais, poeiras, lixo, etc.;</li>
+                                <li>Os materiais em contacto com a água (equipamentos, tubagens, válvulas, etc.) devem ser os
+                                    adequados e compatíveis com o tipo de água e agente desinfetante utilizado, de modo a
+                                    minimizar a sua corrosão;</li>
+                                <li>Deve prever-se o volume inicial de água na piscina, para se poder calcular o caudal necessário
+                                    para a abastecer e manter o nível desejado, bem como a melhor forma para proceder à sua
+                                    renovação e drenagem;</li>
+                                <li>A maioria dos tratamentos a aplicar necessitam de um sistema para homogeneização das
+                                    substâncias químicas. Se não forem fornecidas pelo fabricante, deve ser prevista a instalação de
+                                    bombas hidráulicas, com zonas ou ralos de sucção e de injeção (podem estar associadas a filtros) </li>
+                                <li>A colocação, nas imediações, de postos de engodo para pragas poderá ser uma mais-valia, se
+                                    devidamente controlados por pessoal técnico e com as necessárias regras de segurança.
+                                    Importa impedir o contacto destes produtos com a água;</li>
+                                <li>O cálculo do volume da piscina é essencial para se realizar corretamente o tratamento da água
+                                    da piscina.
+                            </ol>
+                        
+                    
+                        <div style="margin-bottom:2em;">
+                            <h3 id="vol" style="text-align:center">Cálculo do Volume de Água da Piscina</h3>
+                            <div class="calculos">
+                                <h4 style="margin-top: 0px;">Formato da piscina:</h4>
+                                <input type="radio" id="rectangular" name="volume" checked onClick="rect_selected()">&nbsp;
+                                <label for="rectangulo">Rectangular/quadrada</label>
+                                <input type="radio" id="circular" name="volume" onClick="circ_selected()">&nbsp;
+                                <label for="rectangulo">Circular</label>
+                                <input type="radio" id="oval" name="volume" onClick="oval_selected()">&nbsp;
+                                <label for="rectangulo">Oval</label>
+                                <p style="font-size:smaller;">A profundidade média pode ser calculada fazendo: (profundidade parte mais funda) + (profundidade parte menos funda) a dividir por 2</p>
+                                <div id="form_vol" style="margin-top:1em;">
+                                    <form >
+                                        <label id="lab_comp" for="comprimento" >Comprimento&nbsp;(m):</label>&nbsp;
+                                        <input class="form_vol" type="number" id="comprimento">
+                                        <label id="lab_larg" for="largura">Largura&nbsp;(m):</label>&nbsp;
+                                        <input class="form_vol" type="number" id="largura">
+                                        <label id="lab_prof" for="prof_media">Profundidade&nbsp;Média&nbsp;(m):</label>&nbsp;
+                                        <input class="form_vol" type="number" id="prof_media">
+                                        <input type="button" class="menu_button" id="bot_calcular" value="Calcular" onclick="calc_volume()">
+                                        <div id="linha_result" style="display:none;">
+                                            <p>Volume: <span id="resultado"></span>&nbsp;m<sup>3</sup></p>
+                                            <span style="font-size:smaller">1 m<sup>3</sup> = 1000 litros</span>
+                                        </div>   
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="button" id="nav" class="menu_button"  value="VOLTAR AO INICIO" onClick="scroll_into('wrapper')" />
+                        <hr/>
+                        <h3 id="p3"><li>O FORNECIMENTO DE ÁGUA À PISCINA</li></h3>
+                        <p>Quando se pretende abastecer a piscina, há que ter em conta a origem da água. Assim, se se tratar de uma água:</p>
+                        <ol type="A" class="ordem_letras" style="margin-bottom:2em;">
+                            <li><p>De proveniência fiável, tratada e controlada, nomeadamente “Água destinada ao Consumo
+                                Humano”, deverá ter-se em atenção de que a sua qualidade está assegurada apenas no
+                                momento do abastecimento inicial, havendo necessidade de a corrigir e manter para os
+                                parâmetros de utilização em piscinas (que são substancialmente diferentes), garantindo
+                                que não interferem com a desinfeção a aplicar;</p></li>
+                            <li><p>Com qualidade físico-química e microbiológica desconhecida (por exemplo: poços, furos
+                                artesianos, rios, lagos, etc.), é recomendável fazer análises laboratoriais entre outros, aos
+                                parâmetros padrão (pH, Condutividade elétrica, Turvação, Oxidabilidade/Carbono orgânico
+                                total, Indicadores de contaminação fecal). Provavelmente, será necessário recorrer a
+                                processos de tratamento mais ou menos dispendiosos, dependendo dos resultados
+                                analíticos.</p></li>
+                        </ol>
+                        <input type="button" id="nav" class="menu_button"  value="VOLTAR AO INICIO" onClick="scroll_into('wrapper')" />
+                        <hr/>
+                        <h3 id="p4"><li>O TRATAMENTO DA ÁGUA DA PISCINA</li></h3>
+                        <p>Tendo em atenção de que a água fica retida na piscina por longos períodos de tempo, deve ser
+                        sujeita a tratamento contínuo para se manter limpa e sem riscos para a saúde dos utilizadores. Uma
+                        adequada filtração e desinfeção mata os microrganismos que constituem risco para a saúde e
+                        remove gorduras, óleos e outros contaminantes. </p>
+                        <ol type="A" class="ordem_letras">
+                            <b><li>Filtração da água</li></b>
+                            <p>Uma regra importante é a necessária remoção de partículas, quer as existentes na água de origem,
+                            quer as que se geram pela sua utilização, e que tornam a água com aspeto turvo ou leitoso. Para
+                            tal, deverá instalar-se um sistema de filtração em circuito fechado que reterá as impurezas sólidas.<br>
+                            Os filtros mais usados são à base de leito de areia, embora existam outros materiais filtrantes, tais
+                            como terra de diatomáceas ou filtros de cartucho.<br>
+                            Regra geral, o sistema deve ser dimensionado de forma a conseguir filtrar o volume de água todo
+                            da piscina num período compreendido entre as quatro e as oito horas, pelo que a capacidade do
+                            sistema de filtragem, definida em litros / hora, é calculada em função do volume de água a filtrar. O
+                            sistema de filtração deve funcionar durante todo o período de utilização da piscina e durante pelo
+                            menos mais uma hora após deixar de ser usada.<br>
+                            O filtro deve ser regularmente lavado para manter a sua eficácia (ver instruções do fabricante). A
+                            água de lavagem dos filtros deve ser descarregada para a rede de esgotos, caso exista.</p>
+                            
+                            <p class="nota_importante"><b>NOTA IMPORTANTE:</b> os filtros de partículas não têm a finalidade de desinfetar a água ou de a
+                                manter microbiologicamente segura.</p>
+                            
+                            <b><li>Desinfeção</li></b>
+                            <p>A água, mesmo com aspeto límpido, pode conter micróbios, alguns deles, eventualmente,
+                            transmissores de doenças. Os mais comuns são causadores de distúrbios intestinais, irritações da
+                            pele ou dos olhos e até infeções pulmonares. Assim, é necessário manter permanentemente a água
+                            livre de potenciais riscos para a saúde humana. Por este motivo é necessário desinfetá-la a fim de
+                            eliminar todos os micro-organismos da água.<br>
+                            Existem disponíveis no mercado diversos sistemas adequados a piscinas domésticas, mais ou
+                            menos sofisticados e/ou automatizados. A desinfeção com cloro é a mais comum, no entanto são
+                            também usados bromo, ozono, irradiação ultravioleta (UV), eletrólise de sal, etc., devendo seguir-se as respetivas instruções de instalação e manutenção.</p>
+                            <h4>Desinfeção com cloro</h4>
+                            <p>O método mais económico, e provavelmente mais eficaz, para prevenir a contaminação
+                            microbiológica é a adição doseada de Cloro, geralmente disponível na forma de Hipoclorito de
+                            sódio líquido (lixívia comercial concentrada) ou outro produto comercial líquido ou em pó.
+                            As empresas especializadas disponibilizam uma gama variada de produtos, com uma grande
+                            diversidade de preços, estabilidade, eficácia, segurança e solubilidade.
+                            É recomendável que o teor de Cloro Residual Livre esteja compreendido entre (Fonte: Circular
+                            Normativa Nº 14/DA, DGS):
+                            <ul>
+                                <li>0,5 e 1,2 ppm para valores de pH entre 6,9 e 7,4</li>
+                                <li>1,0 e 2,0 ppm para valores de pH entre 7,5 e 8,0</li>
+                            </ul>
+                            </p>
+                            <p class="nota_importante"><b>NOTA:</b> ppm – partes por milhão é equivalente a miligramas por litro ou gramas por metro cúbico.</p>
+                            <p>Para uma água bruta de origem não tratada, será necessário proceder a um choque prévio, para
+                            eliminar a carga microbiana inicial, as algas, odores, etc.; nesta fase, é recomendável um teor de
+                            cloro de 2 ppm, com um período de contacto de 8 horas e sem utilização da piscina.<br>
+                            O teor de Cloro numa piscina está sujeito a variações, havendo diversos fatores que o influenciam.<br>
+                            Os principais são a temperatura ambiente e o número de banhistas. Deste modo, é desejável
+                            efetuar o controlo do teor de cloro residual livre, através de kit de análise disponível no mercado,
+                            tanto mais frequentemente quanto maior for a temperatura ambiente ou da própria água e o
+                            número de utilizadores.<br>                                
+                            Também importante é a higiene pessoal dos utilizadores, tal como o seu estado de saúde.
+                            Indivíduos portadores de doenças de pele ou outras transmissíveis deverão evitar a utilização de
+                            piscinas comuns, mesmo estando garantidos os teores de cloro normais.<br>
+                            Sempre que se detete um teor de cloro inferior ao recomendado, deve, de imediato, corrigir-se e,
+                            eventualmente, tomarem-se ações corretivas (identificar e eliminar a causa).</p>
+                            <h5 style="text-decoration:underline">Exemplos:</h5>
+                            <p><ul>
+                                    <li>Valores de cloro baixos (entre 0,3 e 0,5 ppm) – adicionar um pouco de cloro manualmente ou
+                                    aumentar ligeiramente a doseadora até aos valores alvo. Controlar mais frequentemente.</li>
+                                    <li>Valores de cloro muito baixos (entre 0 e 0,3 ppm) – não utilizar a piscina. Adicionar cloro
+                                    manualmente até cerca de 1,2 ppm e aguardar cerca de 8 horas antes de utilizar.</li>
+                                    <li>Valores de cloro altos (acima de 2 ppm) – desligar momentaneamente a doseadora e aguardar
+                                    a regularização para os valores alvo.</li>
+                                </ul></p>
+
+                            <b><li>Correção do PH</li></b>
+                            
+                            <p>O pH da água é um indicador da sua acidez ou alcalinidade. Para que a água de uma piscina reúna
+                            as condições ideais para garantir a eficácia do tratamento microbiológico, é importante e
+                            recomendável que o pH esteja compreendido entre <b>7,2</b> e <b>7,6</b>.</p>
+                            <p class="nota_importante"><b>NOTA:</b> poderá aceitar-se um valor até 7,8, desde que seja garantido 
+                            um doseamento superior de Cloro.</p>
+                            <p>Para corrigir o pH das águas, é necessário adicionar produtos químicos. Os produtos mais eficazes
+                                são bastante corrosivos e, portanto, perigosos de manusear. Assim, é fundamental garantir a
+                                segurança pessoal, utilizando os meios de proteção adequados e o máximo de precaução (ver
+                                símbolos na rotulagem e Fichas de Segurança, para manuseamento e armazenamento).</p>
+                            <p>Recomenda-se a adição de:</p>
+                                <ol>
+                                    <li>Soda cáustica comercial ou outro produto alcalino, para águas com pH inferior a 7,2</li>
+                                    <li>Ácido clorídrico comercial ou outro produto ácido, para águas com pH superior a 7,6</li>
+                                </ol>
+                            <p class="nota_importante">Concentrações de produto a usar na correção do pH</p>
+                            <table class="quadros">
+                                <tr class="titulo">
+                                    <th>PH</th>
+                                    <th>Produto</th>
+                                    <th>Quantidade a adicinar em g/m<sup>3</sup></th>
+                                </tr>
+                                <tr>
+                                    <th>Entre 6,8 e 7,2</th>
+                                    <td>Soda cáustica</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <th>Entre 6,5 e 6,8</th>
+                                    <td>Soda cáustica</td>
+                                    <td>8</td>
+                                </tr>
+                                <tr>
+                                    <th>Menos que 6,5 </th>
+                                    <td>Soda cáustica</td>
+                                    <td>10</td>
+                                </tr>
+                                <tr>
+                                    <th>Entre 7,6 e 8,0</th>
+                                    <td>Ácido clorídrico</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <th>Entre 8,0 e 8,4</th>
+                                    <td>Ácido clorídrico</td>
+                                    <td>12</td>
+                                </tr>
+                                <tr>
+                                    <th>Mais que 8,4</th>
+                                    <td>Ácido clorídrico</td>
+                                    <td>18</td>
+                                </tr>    
+                            </table>
+                            <input type="button" id="nav" class="menu_button"  value="VOLTAR AO INICIO" onClick="scroll_into('wrapper')" />
+                            <hr/>
+                        </ol>
+                            <h3 id="p5"><li>O CONTROLO DA QUALIDADE DE ÁGUA</li></h3>
+                            <p>No que diz respeito aos parâmetros físico-químicos, é fundamental o controlo diário <b>de pH e Cloro
+                            residual livre (ou outro desinfetante)</b>. Em períodos muito quentes, ou sempre que a piscina for
+                            usada por mais pessoas, devem ser feitos testes mais frequentes de modo a que possam ser
+                            detetadas atempadamente alterações na qualidade da água. Para o efeito, é necessário adquirir um
+                            estojo / kit de análise ou recorrer a um laboratório.</p>
+
+                            <ol type="A" class="ordem_letras">
+                                <b><li>Microbiológico</li></b>
+                                <p>Além do regular controlo de pH e Cloro livre, através de kit de análise, é importante confirmar a
+                                segurança microbiológica da água.<br>
+                                Dependendo do grau de utilização e da qualidade original da água, devem realizar-se análises
+                                bacteriológicas regulares, em laboratório com os ensaios preferencialmente acreditados pela
+                                Norma NP EN ISO/IEC 17025 – ver lista IPAC <a href="http://www.ipac.pt/pesquisa/acredita.asp">/http://www.ipac.pt/pesquisa/acredita.asp</a>).<br>
+                                Nas piscinas públicas ou semipúblicas, é obrigatório o controlo bacteriológico, no mínimo com uma
+                                periodicidade quinzenal, e os resultados devem estar afixados em zona bem visível. De igual modo,
+                                a verificação do teor de cloro e da temperatura da água é realizada, no mínimo de 4 em 4 horas e
+                                os resultados devem estar disponíveis ao utente.<br>
+                                Estas piscinas são também passíveis de vigilância sanitária pelas autoridades de saúde locais, pelo
+                                que a respetiva Delegação de Saúde deverá ser informada desta atividade.<br>
+                                Nas piscinas privadas, apesar de não haver uma obrigatoriedade legal, é recomendável o controlo
+                                bacteriológico, pelo menos antes da primeira utilização anual; depois, mensalmente e sempre que
+                                se suspeite de um problema de contaminação.<br>
+                                Os parâmetros e respetivos valores recomendados são os indicados na seguinte tabela.</p>
+                                <p class="nota_importante">Valores recomendados para parâmetros bacteriológicos em água de piscina</p>
+                                <table class="quadros">
+                                    <tr class="titulo">
+                                        <th>Parâmetros</th>
+                                        <th>Valores alvo</th>
+                                        <th>Valores limite</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Coliformes totais</th>
+                                        <td>0 ufc / 100 ml </td>
+                                        <td>10 ufc / 100 ml</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Escherichiacoli</th>
+                                        <td>---</td>
+                                        <td>0 ufc / 100 ml
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Enterococos fecais </th>
+                                        <td>---</td>
+                                        <td>0 ufc / 100 ml</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Pseudomonas aeruginosa</th>
+                                        <td>---</td>
+                                        <td>0 ufc / 100 ml</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Estafilococos</th>
+                                        <td>≤ 20 ufc / 100 ml</td>
+                                        <td>(1)</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Estafilococos produtores de Coagulase</th>
+                                        <td>0 ufc / 100 ml </td>
+                                        <td>0 ufc / 100 ml em 90% das amostras</td>
+                                    </tr> 
+                                    <tr>
+                                        <th>Mesófilos aeróbios a 37 <sup>o</sup>C, às 24 h</th>
+                                        <td>≤ 100 ufc / 1 ml</td>
+                                        <td>(1)</td>
+                                    </tr>  
+                                </table>
+                                <h6 style="font-weight:300;">(1) Poder-se-ão ocasionalmente ultrapassar os valores alvo, desde que não sistematicamente, recomendando-se uma
+                                especial atenção ao teor de cloro. Desejável a repetição do ensaio, com a maior brevidade possível.
+                                Fonte: Decreto Regulamentar nº 5/97 de 31 de março</h6>
+                                <p class="nota_importante"><b>Nota:</b> Em piscinas aquecidas, jacuzzi’s e chuveiros, é igualmente importante a pesquisa de
+                                Legionellasp. eLegionellapneumophila, sendo os respetivos valores limite de 1000 (mil) e 0 (zero)
+                                ufc/litro, respetivamente.</p>
+
+                                <b><li>Físico-químico</li></b>
+                                <p>Além do controlo regular da temperatura, do pH e do Cloro residual livre, é conveniente a
+                                determinação de outros parâmetros. Para tal, é necessário recorrer a laboratórios, já que estes
+                                ensaios requerem equipamentos geralmente não acessíveis a particulares. </p>
+                                <p>Os parâmetros e respetivos valores recomendados são os indicados na seguinte tabela.</p>
+                                <p class="nota_importante">valores recomendados para parâmetros físico-químicos em água de piscina</p>
+                                <table class="quadros">
+                                    <tr class="titulo">
+                                        <th>Parâmetros</th>
+                                        <th>Valores alvo</th>
+                                        <th>Valores limite</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Condutividade</th>
+                                        <td>&lt; 900 µS/cm </td>
+                                        <td>1700 µS/cm</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Turvação</th>
+                                        <td>---</td>
+                                        <td>&lt; 6 NTU</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Oxidabilidade</th>
+                                        <td></td>
+                                        <td>Não ultrapassar em 4 mg/L
+                                            de O<sub>2</sub> o valor da água que
+                                            abastece o tanque</td>
+                                    </tr>
+                                </table>
+                                <h6 style="font-weight:300;">Fonte: Decreto Regulamentar nº 5/97 de 31 de março</h6>
+                            </ol>
+                            <input type="button" id="nav" class="menu_button"  value="VOLTAR AO INICIO" onClick="scroll_into('wrapper')" />
+                            <hr/>
+                            <h3 id="p6"><li>RESOLUÇÃO DE ALGUNS PROBLEMAS</li></h3>
+                            <ul class="sem_ordem" style="margin-bottom:2em;">
+                                <li style="text-decoration:underline">Algas ou paredes com limos:</li>
+                                <p>Normalmente, se os teores de cloro se mantiverem sob controlo regular, não se desenvolvem
+                                algas; no entanto, em caso de aparecimento de água “verde”, adicionar sulfato de cobre
+                                comercial, dissolvido em água tépida, até uma dose de 1,5 gramas por metro cúbico; em
+                                alternativa, usar um produto anti alga disponível no mercado;</p>
+                                <li style="text-decoration:underline">Queixas de olhos “vermelhos” ou com ardor:</li>
+                                <p>Provavelmente o teor de cloro está demasiado alto. Verificar e, se se confirmar, desligar a
+                                doseadora até regularização para os valores alvo;</p>
+                                <li style="text-decoration:underline">Odores desagradáveis:</li>
+                                <p>Verificar o teor de cloro. Caso esteja abaixo do valor alvo, aumentar até 1,5 ppm. Verificar se o
+                                filtro está sujo;</p>
+                                <li style="text-decoration:underline">Água leitosa:</li>
+                                <p>Verificar se o filtro está sujo. Caso se confirme, ligar o filtro em permanência até a água ficar
+                                cristalina; ponderar a utilização de um produto floculante disponível no mercado;</p>
+                                <li style="text-decoration:underline">Acessórios com sinais de corrosão:</li>
+                                <p>Verificar o teor de cloro e de pH com mais frequência;</p>
+                                <li style="text-decoration:underline">Em caso de resultados microbiológicos acima dos valores limite:</li>
+                                <p>Não utilizar a piscina, em especial por crianças, idosos e indivíduos convalescentes ou debilitados;</p>
+
+                                <p class="nota_importante"><b>NOTA IMPORTANTE:</b> Se houver suspeitas de problemas de saúde pública, tais como vários
+                                    utentes a adoecer, informar a Autoridade de Saúde local.</p>
+                            </ul>
+                            <input type="button" id="nav" class="menu_button"  value="VOLTAR AO INICIO" onClick="scroll_into('wrapper')" />
+                            <hr/>
+                            <h3 id="p7"><li>PREPARAÇÃO DA PISCINA PARA O INVERNO (HIBERNAÇÃO)</li></h3>
+                            <ol type="A" class="ordem_letras">
+                                <li><p>Limpar a piscina e regular o cloro para um teor de cerca de 10 – 12 ppm e, eventualmente,
+                                    reforçar com um produto algicida para evitar a proliferação de algas e sujidade, o que facilitará a
+                                    limpeza e a reutilização na época balnear seguinte;</p></li>
+                                <li><p>Desligar todos os equipamentos (bombas, sistemas de limpeza, aquecimento, etc.) e drenar
+                                    todas as tubagens e acessórios (o sistema deve prever um ponto de drenagem, de cota inferior,
+                                    que garanta que todo o sistema fica em vazio durante o inverno; no final do processo, não
+                                    esquecer de o tapar, para evitar que possa encher);</p></li>
+                                <li><p>Reduzir o nível da água cerca de 50 cm abaixo do nível normal. Em piscinas ao ar livre, ter
+                                    atenção, após períodos de chuva, para, se necessário, repor o nível de inverno;</p></li>
+                                <li><p>Equacionar a manutenção preventiva dos equipamentos. É a altura ideal para verificar bombas,
+                                    limpar tubagens, filtros, etc.</p></li>
+                                <li><p>. É aconselhável cobrir a piscina. A cobertura é muito importante, não só para impedir ou
+                                    minimizar a entrada de sujidade e chuva, como também para criar um ambiente de estufa, que
+                                    poderá evitar a formação de gelo em caso de temperaturas muito baixas. Existem no mercado
+                                    coberturas próprias para o efeito. Assegurar que fica bem esticada e, regularmente, tentar
+                                    remover todo o lixo que se vai acumulando, assim como as poças de água que se formam após
+                                    períodos de chuva.</p></li>
+                            </ol>
+                            <p class="nota_importante"><b>NOTA IMPORTANTE:</b>Ter atenção à circulação nas imediações da piscina com a cobertura,
+                                especialmente no caso das crianças. A normal cobertura de material maleável pode dar uma falsa
+                                aparência de firmeza, pelo que uma queda poderá ter consequências fatais. Também não será
+                                suficiente colocar sinais de aviso, que não serão entendidos pelas crianças. É conveniente prever
+                                a montagem de barreiras físicas e nunca descurar a vigilância.</p>
+                                
+                            <input type="button" id="nav" class="menu_button"  value="VOLTAR AO INICIO" onClick="scroll_into('wrapper')" />
+                            <hr/>
+                        </ol>
+                        
+                        
+                    </ol>
+                </div>
+                
             </div>
+            <!-- Botão Marcas HTML e CSS -->
             <div style="text-align: center;">
                 <input id="but_comentarios"  type="button" class="menu_button" value="Mostrar Marcas HTML e CSS Utilizadas" onclick="show_hide_comment()">
             </div>
@@ -49,7 +442,7 @@
         <!-- Inicio da divisória dos comentários ás marcas HTML e CSS -->
         <div id="comentarios" class="marcas" style="display: none;">
             <hr />
-            <h2><p>Marcas utilizadas na página:</p></h2>
+            <h2><p>Marcas utilizadas na página (com exceção das já referidas na página inicial):</p></h2>
             <table class="tabela_marcas">
                 <tr>
                     <th>HTML</th>
@@ -57,9 +450,21 @@
                 </tr>
                 <tr>
                     <td id="marcas_html">
-        
+                        <p><b>&lt;input type="radio"&gt; - </b>Define uma entrada(input), neste caso uma opção tipo radio, utilizado na seleção do formato da 
+                            piscina no cálculo do volume, atribuindo o mesmo nome aos "radios" obtem-se uma interligação entre eles, em que apenas um fica selecionado. 
+                            O input com o atributo checked, fica pré-seleccionado. Exemplo: &lt;input&nbsp;type="radio"&nbsp;id="rectangular"&nbsp;name="volume"&nbsp;checked&nbsp;onClick="rect_selected()"&gt; </p>
+                            <p><b>&lt;input type="number"&gt; - </b>Define uma entrada(input) de texto, neste caso uma opção tipo número (apenas aceita números), utilizado na caixa de formulario do 
+                                comprimento no cálculo do volume. Exemplo: &lt;input&nbsp;class="form_vol"&nbsp;type="number"&nbsp;id="comprimento"&gt; </p>
+                        <p><b>&lt;label&gt; - </b>Define uma "etiqueta" para um marcador &lt;input&gt;, neste caso para os inputs do tipo radio na seleção do formato da 
+                            piscina, o seu atributo for="" deve ser igual ao id do input que se pretende etiquetar. Exemplo: &lt;label&nbsp;id="lab_comp"&nbsp;for="comprimento"&gt;Comprimento&nbsp;(m):&lt;/label&gt;</p>
+                        <p><b>&lt;span&gt; - </b>Marca inline utilizada para dar relevo de alguma forma no texto, neste caso utilizada para formatar a seta á direita (&rarr; ou &amp;rarr;) no link para as recomendações para a qualidade da água de piscinas domésticas.</p>
+                        <hr/>
+                        <h4>Carateres especiais HTML</h4>
+                        <p><b>&amp;emsp; - </b>Adiciona 4 espaços, utilizado no primeiro paragrafo da página</p>
+                        <p><b>&amp;rarr; - </b>Desenha o simbolo seta a direita</p>
                     </td>
                     <td id="marcas_css">
+                        <p><b>text-decoration: underline; - </b>Utilizado para formatar texto, neste caso para colocar o resultado do volume sublinhado.</p>
                     </td>
                 </tr>
             </table>

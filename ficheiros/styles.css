@@ -1,16 +1,17 @@
+/* Utilizado em todos os ficheiros HTML */
 body {
   margin: 0%;
   background-color: indigo;
   margin: 0 10% 0% 10%;
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
   width: 0px;
 }
 
 #wrapper {
   padding: 20px;
-  background-color:lightgray;
+  background-color: lightgray;
 }
 
 .content {
@@ -38,27 +39,34 @@ body::-webkit-scrollbar{
 }
 
 .menu_button:active {
-  background-color:indigo;
+  background-color: indigo;
 }
 
-/* Galeria Imagens */
+/* Galeria Imagens/Videos */
 
 .galeria {
   width: 100%;
-  border: 1px solid black;
 }
 .galeria th,
 .galeria td {
-  border: 1px solid black;
+  background-color: lightcyan;
+  border-radius: 5px;
+  border: 2px outset lightblue;
   padding: 1ex;
   text-align: center;
   vertical-align: top;
+  width: 50%;
 }
 
-.img_gal{
-  width:540px;
+.img_gal {
+  max-width: 100%;
+  height: auto;
 }
 
+.vid_iframe {
+  width: 100%;
+  height: 320px;
+}
 
 /* css para a div dos comentários ás marcas */
 .marcas {
@@ -77,6 +85,7 @@ body::-webkit-scrollbar{
 .tabela_marcas td {
   border: 1px solid black;
   padding: 1ex;
+  width: 50%;
 }
 
 td {
@@ -90,4 +99,34 @@ td {
   border: 0px;
   margin: 0px;
   padding: 0px;
+  width: auto;
+}
+
+/* Botão flutuante contactos */
+
+#floating_contacts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  border-radius: 50px;
+  border: 6px outset lightblue;
+  background-color: dodgerblue;
+  height: 80px;
+  width: 80px;
+  font-style: italic;
+  font-weight: bold;
+  user-select: none;
+}
+
+#floating_contacts:hover {
+  background-color: rgb(31, 118, 206);
+}
+
+#floating_contacts:active {
+  border: 6px inset lightblue;
+  background-color: indigo;
 }

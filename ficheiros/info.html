@@ -4,6 +4,7 @@
     <head>
         <title>Regas & Piscinas</title>
         <link rel="stylesheet" type="text/css" href="./styles.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="./script.js"></script>
         
     </head>
@@ -13,7 +14,6 @@
                 <h1 style="text-align:center;">Info</h1>
                 <hr />
                 <div class="menu">
-
                     <input type="button" class="menu_button"  value="Inicio" onClick="nav_inicio()" />
                     <input type="button" class="menu_button" value="Regas" onClick="nav_regas()">          
                     <input type="button" class="menu_button" value="Piscinas" onClick="nav_piscinas()">
@@ -23,21 +23,32 @@
             </div>
             
             <div class="content">
-                <h2 style="text-align:center;">Este site apresenta alguns materias de Rega e de Tratamento de piscinas</h2>
-                <table class="galeria">
-                        <tr>
-                            <th>REGA</th>
-                            <th>PISCINAS</th>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img class="img_gal" src="./imagens/bico rotator.png">
-                            </td>
-                            <td>
-                                <img class="img_gal" src="./imagens/piscina_demo.png">
-                            </td>
-                        </tr>
+                <table class="galeria" >
+                    <tr>
+                        <td>
+                            <h4>Este site foi desenvolvido no âmbito do E-Folio B da unidade curricular:</h4><br>
+                            <h3><em>Laboratório de Sistemas e Serviços Web</em></h3>
+                            <h4>do Curso:</h4>
+                            <h3><em>Licenciatura em Engenharia Informática</em></h3>
+                        </td>
+                        <td >
+                            <h3>Universidade Aberta</h3>
+                            <a href="https://portal.uab.pt/" target="blank"><img src="../imagens/uab.png"></a>
+                        </td>
+                    </tr>
                 </table>
+                <hr/>
+                <h4>Fontes e Agradecimentos:
+                    <ul>
+                        <li>á HidroVirtual e ao seu Sócio-Gerente Luis Vieira, que se colocou á disposição para 
+                            que este site podesse ser colocado no seu alojamento, e que permitiu a utilização das 
+                            imagens da sua loja online - <a href="https://www.hidrovirtual.pt/" target="blank">www.HidroVirtual.pt</a></li>
+                        <li>á Maker e ao Jean Sathler por ter tido a paciencia de fazer os videos tutoriais da programação dos equipamentos da Hunter. <i class="fa fa-youtube" style="font-size:24px"></i><a href="https://www.youtube.com/channel/UC614AFEVoje6cTPfudkNgiQ" target="blank">&nbsp;Maker</a></li>
+                        <li>ao Doutor Irrigação por ter tido a paciencia de fazer os videos tutoriais da programação dos equipamentos da Rain Bird. <i class="fa fa-youtube" style="font-size:24px"></i><a href="https://www.youtube.com/channel/UCAF-beqOar1kBLKARMh-rvg" target="blank">&nbsp;Doutor Irrigação</a></li>
+                        <li>As informações sobre os equipamentos foram todas retiradas das páginas das marcas, e têm todas um link para a página utilizada</li>
+                        <li>Toda a informação sobre piscinas foi retirada do documento <a href="http://www1.ipq.pt/PT/IPQ/Publicacoes/PublicacoesDownload/Documents/Recomendacoes%20Piscinas%20Domesticas.pdf" target="blank">RECOMENDAÇÕES PARA MANTER A QUALIDADE DA ÁGUA DE PISCINAS DOMÉSTICAS</a> do Instituto Português da Qualidade | Ministério da Economia, Comissão Setorial para Água (CS/04)</li>
+                    </ul>
+                </h4>
             </div>
             <div style="text-align: center;">
                 <input id="but_comentarios"  type="button" class="menu_button" value="Mostrar Marcas HTML e CSS Utilizadas" onclick="show_hide_comment()">
@@ -54,13 +65,15 @@
             <table class="tabela_marcas">
                 <tr>
                     <th>HTML</th>
+                    
                     <th>CSS</th>
                 </tr>
                 <tr>
                     <td id="marcas_html">
-
+                        <p><b>&lt;em&gt; - </b>Dá enfase a um texto, utilizado para dar enfase ao texto Laboratório de Sistemas e Serviços Web e Licenciatura em Engenharia Informática.</p>
                     </td>
                     <td id="marcas_css">
+                        <p>Sem nenhum marcador CSS novo nesta página</p>
                     </td>
                 </tr>
             </table>

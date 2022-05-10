@@ -19,6 +19,10 @@ body {
   margin-bottom: 2em;
 }
 
+a {
+  color:darkblue;
+}
+
 ol.ordem_letras,
 ul.sem_ordem {
   padding-left:20px;
@@ -45,10 +49,28 @@ table.quadros{
   margin-bottom: 2em;
 }
 
-
 tr.titulo{
   background-color: silver;
 }
+
+figure.img_in_text{
+  float:right;
+  margin: 5px 0px 5px 20px;
+  background-color: silver;
+  border-left: 4px solid indigo;
+  
+}
+
+figure.img_in_text figcaption{
+  padding-left: 5px;
+  height:3em;
+  
+}
+
+figure.img_in_text img{
+  height: 150px;
+}
+
 
 /* Menu */
 .menu {
@@ -112,6 +134,10 @@ tr.titulo{
   font-style: oblique;
   text-decoration: underline;
   font-weight: 900;
+}
+
+ul li{
+  list-style: disc;
 }
 
 /* Galeria Imagens/Videos */

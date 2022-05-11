@@ -1,7 +1,13 @@
 /* Utilizado em todos os ficheiros HTML */
 body {
   margin: 0%;
-  background-color: indigo;
+  background: linear-gradient(
+    90deg,
+    indigo 0%,
+    lightgray 20%,
+    lightgray 80%,
+    indigo
+  );
   margin: 0 10% 0% 10%;
   font-family: system-ui;
 }
@@ -9,9 +15,11 @@ body {
 #wrapper {
   padding: 20px;
   background-color: lightgray;
+  border: 1px;
+  border-style: outset;
 }
 
-#header{
+#header {
   height: max-content;
 }
 
@@ -20,64 +28,71 @@ body {
 }
 
 a {
-  color:darkblue;
+  color: darkblue;
+}
+
+ul li {
+  list-style: disc;
 }
 
 ol.ordem_letras,
 ul.sem_ordem {
-  padding-left:20px;
+  padding-left: 20px;
 }
 
 .nota_importante {
   border-left: 4px solid indigo;
   background-color: silver;
-  padding:5px;
+  padding: 5px;
+  margin-top: 3em;
 }
 
 table.quadros td,
 table.quadros th,
-table.quadros{
+table.quadros {
   border: 2px solid black;
   text-align: center;
-  padding:2px;
-  border-collapse:collapse;
+  padding: 2px;
+  border-collapse: collapse;
   border-spacing: 0px;
 }
 
-table.quadros{
+table.quadros {
   width: 100%;
   margin-bottom: 2em;
 }
 
-tr.titulo{
+tr.titulo {
   background-color: silver;
 }
 
-figure.img_in_text{
-  float:right;
+figure.img_in_text,
+figure.img_off_text {
+  float: right;
   margin: 5px 0px 5px 20px;
   background-color: silver;
   border-left: 4px solid indigo;
-  
 }
 
-figure.img_in_text figcaption{
+figure.img_in_text figcaption {
   padding-left: 5px;
-  height:3em;
-  
+  height: 3em;
 }
 
-figure.img_in_text img{
+figure.img_in_text img {
   height: 150px;
 }
 
+.img_linha {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 /* Menu */
 .menu {
   display: inline-block;
   margin: 2px 10px 2px 10px;
   height: 2.5em;
-
 }
 
 .nav_menu {
@@ -93,28 +108,38 @@ figure.img_in_text img{
   padding: 5px;
   border: 0px;
   margin: 0px;
-  font-family:'Courier New', Courier, monospace;
-  font-weight:bolder;
-  font-size:larger;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bolder;
+  font-size: larger;
 }
 
-#nav.menu_button{
+.nav {
+  background-color: azure;
+  width: auto;
+  padding: 5px;
+  border: 0px;
+  margin: 0px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bolder;
   font-size: 0.7em;
 }
 
-.menu_button:hover {
-  background-color: grey;
+.menu_button:hover,
+.nav:hover {
+  background-color: indigo;
   color: azure;
 }
 
-.menu_button:active {
-  background-color: indigo;
+.menu_button:active,
+.nav:active {
+  background-color: gray;
+  color: azure;
 }
 
 /* Botão calcular (calculo volumes) */
-#bot_calcular{
+#bot_calcular {
   height: 2em;
-  font-size:smaller;
+  font-size: smaller;
 }
 
 /* Formulário de volumes */
@@ -124,21 +149,19 @@ figure.img_in_text img{
   width: 5em;
 }
 
-.calculos{
-  background-color:silver;
-  padding:10px;
+.calculos {
+  background-color: silver;
+  padding: 10px;
   border-radius: 5px;
 }
 
-#resultado{
+#resultado {
   font-style: oblique;
   text-decoration: underline;
   font-weight: 900;
 }
 
-ul li{
-  list-style: disc;
-}
+
 
 /* Galeria Imagens/Videos */
 
@@ -171,7 +194,7 @@ ul li{
   background-color: white;
   padding: 10px;
   line-height: normal;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: small;
 }
 
@@ -211,20 +234,21 @@ td {
   bottom: 50px;
   right: 50px;
   border-radius: 50px;
-  border: 6px outset lightblue;
+  border: 6px solid silver;
   background-color: dodgerblue;
   height: 80px;
   width: 80px;
-  font-size:x-large;
+  font-size: x-large;
   font-style: italic;
-  font-weight:900;
+  font-weight: 900;
   user-select: none;
 }
 
 #floating_info:hover {
-  background-color: rgb(31, 118, 206);
+  background-color:blue;
+  color:white;
 }
 
 #floating_info:active {
-  border: 6px inset lightblue;
+  border: 2px solid silver;
 }

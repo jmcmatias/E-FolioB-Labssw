@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="pt">
     <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Regas & Piscinas</title>
         <link rel="stylesheet" type="text/css" href="./ficheiros/styles.css" />
-        <script type="text/javascript" src="./ficheiros/script.js"></script>
+        <script src="./ficheiros/script.js"></script>
         
     </head>
     <body>
@@ -31,23 +33,23 @@
                         </tr>
                         <tr>
                             <td>
-                                <img class="img_gal" src="./imagens/bico rotator.png">
+                                <img class="img_gal" src="./imagens/bico_rotator.png" alt="Bico_rotator">
                             </td>
                             <td>
-                                <img class="img_gal" src="./imagens/piscina_demo.png">
+                                <img class="img_gal" src="./imagens/piscina_demo.png" alt="piscina_demo">
                             </td>
                         </tr>
                 </table>
             </div>
             <div style="text-align: center;">
-                <input id="but_comentarios"  type="button" class="menu_button" value="Mostrar Marcas HTML e CSS Utilizadas" onclick="show_hide_comment()">
+                <input id="but_comentarios"  type="button" class="nav" value="Mostrar Marcas HTML e CSS Utilizadas" onclick="show_hide_comment()">
             </div>
         </div>
        
         <!-- Inicio da divisória dos comentários ás marcas HTML e CSS -->
         <div id="comentarios" class="marcas" style="display: none;">
             <hr />
-            <h2><p>Marcas utilizadas na página:</p></h2>
+            <h2>Marcas utilizadas na página:</h2>
             <table class="tabela_marcas">
                 <tr>
                     <th>HTML</th>
@@ -56,10 +58,11 @@
                 <tr>
                     <td id="marcas_html">
                         <p><b>&lt;!DOCTYPE html&gt; - </b>Não é propriamente uma marca, é uma declaração que informa o browser do tipo de documento, neste caso HTML 5.</p>
-                        <p><b>&lt;html&gt; - </b>Contentor para todos os elementos html.</p>
+                        <p><b>&lt;html&gt; - </b>Contentor para todos os elementos html. Com o elemento lang="pt" define-se a linguagem do documento</p>
                         <p><b>&lt;head&gt; - </b>Cabeçalho da página onde estão definidos o título, e os links para os ficheiros de css e e para o de javascript.</p>
-                        <p><b>&lt;link&gt; - </b>Define o relacionamento entre o documento em que é utilizado e uma fonte externa, neste caso para definir o ficheiro externo de estilos com, &lt;link&nbsp;rel="stylesheet"&nbsp;type="text/css"&nbsp;href=".&nbsp;/ficheiros/styles.css"&nbsp;/&gt;.</p>
-                        <p><b>&lt;script&gt; - </b>Inclui um script de javascript, neste caso para um ficheiro externo com, &lt;script&nbsp;type="text/javascript"&nbsp;src="./ficheiros/script.js"&gt;&lt;/script&gt;.</p>
+                        <p><b>&lt;meta charset="utf-8"/&gt; - </b>Define a metadata sobre o documento HMTL, utilizado para definir o encoding das páginas (a listas de caracteres) para utf-8 de modo a que apareçam os caracteres correspondentes ao que foi escrito como acentos, cedilhas, etc. em vez de caracteres estranhos.</p>
+                        <p><b>&lt;link&gt; - </b>Define o relacionamento entre o documento em que é utilizado e uma fonte externa, neste caso para definir o ficheiro externo de estilos com, &lt;link rel="stylesheet" type="text/css" href="./ficheiros/styles.css" /&gt;.</p>
+                        <p><b>&lt;script&gt; - </b>Inclui um script de javascript, neste caso para um ficheiro externo com, &lt;script src="./ficheiros/script.js"&gt;&lt;/script&gt;. Inicialmente tinha colocado o type="text/javascript" mas após fazer a validação do html, recebi um warning de que era desnecessário para recursos javascript, decidi então retirar.</p>
                         <p><b>&lt;tittle&gt; - </b>Utilizado para definir o titulo da página.</p>
                         <p><b>&lt;body&gt; - </b>Define o conteudo do documento HTML que vai ser visivel diretamente na página web.</p>
                         <p><b>&lt;div&gt; - </b>Define uma divisão ou secção num documento HTML, é utilizado como um contentor para elementos de HTML em diversas partes da página, por exemplo no menu.</p>
@@ -76,15 +79,19 @@
                         <p><b>&amp;amp; - </b>Escreve um &.</p>
                     </td>
                     <td id="marcas_css">
-                        <p><b>background-color:indigo; - </b>Utilizado para definir a côr de fundo do body para a côr indigo.</p>
+                        <p><b>background: linear-gradient (90deg, indigo 0%, lightgray 10%, lightgray 90%, indigo); - </b>Utilizado para definir o background do body com um gradiente vertical que vai desde  a côr indigo, passa por duas lightgray aos 15 e 85% da largura e termina novamente em indigo, teve como objetivo dar algum enfase á página.</p>
+                        <p><b>background-color:lightgray; - </b>Utilizado para definir a côr de fundo do wrapper para a côr lightgray.</p>
                         <table class="sub_tabela">
-                            <td>
-                                <b>margin: &nbsp;</b>
-                            </td>
-                            <td>
-                                <b>0 10% 0% 10%;</b> - Utilizado para definir as margens pela ordem: superior|direita|inferior|esquerda, neste caso no body de forma a que todos os marcadores hererditários do body se encontrem dentro destes limites </br>
-                                <b>0%;</b> - Utilizado para definir todas as margens como 0 neste caso foi utilizado na classe sub_tabela
-                            </td>
+                            <tr>
+                                <td>
+                                    <b>margin: &nbsp;</b>
+                                </td>
+                            
+                                <td>
+                                    <b>0 10% 0% 10%;</b> - Utilizado para definir as margens pela ordem: superior|direita|inferior|esquerda, neste caso no body de forma a que todos os marcadores hererditários do body se encontrem dentro destes limites<br>
+                                    <b>0%;</b> - Utilizado para definir todas as margens como 0 neste caso foi utilizado na classe sub_tabela
+                                </td> 
+                        </tr>
                         </table>
                         <p><b>padding: 20px; - </b>Utilizado para definir a margem interna da div com id wrapper para 20 pixeis.</p>
                         <p><b>height: 2.5em; - </b>Utilizado para definir altura da classe menu para 1.5 vezes o tamanho da fonte do elemento corrente.</p>

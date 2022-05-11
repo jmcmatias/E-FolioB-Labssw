@@ -4,7 +4,7 @@ function nav_inicio() {window.location.href="../index.html"}
 function nav_regas() {window.location.href="../ficheiros/regas.html"}
 function nav_piscinas() {window.location.href="../ficheiros/piscinas.html"}
 function nav_contactos() {window.location.href="../ficheiros/contactos.html"}
-function nav_info() {window.location.href="../ficheiros/info.html"}
+function nav_info() {window.location.href="../ficheiros/info.html";}
 
 
 // Função que mostra/esconde os comentários ás marcas
@@ -79,3 +79,6 @@ function calc_volume(){
     document.getElementById("resultado").innerHTML=result;
     document.getElementById("linha_result").style.display="inline";
 }
+
+
+

@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="pt"> 
     <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>R&P - Contactos</title>
         <link rel="stylesheet" type="text/css" href="./styles.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -17,17 +19,17 @@
 
                     <input type="button" class="menu_button"  value="Inicio" onClick="nav_inicio()" />
                     <input type="button" class="menu_button" value="Regas" onClick="nav_regas()">
-                    <input type="button" class="menu_button" value="Piscinas"onClick="nav_piscinas()">
+                    <input type="button" class="menu_button" value="Piscinas" onClick="nav_piscinas()">
                 </div>
                 <hr />
             </div>
             
             <div class="content">
-                <h3>Desenvolvido Por  Jorge Matias</h3>
+                <h3>Site Desenvolvido Por:  <em>Jorge Matias, aluno nº1901807</em></h3>
                 <table>
                     <tr>
                         <td>
-                            <h3>&#128222;</h3>
+                            <h3>&#128222;&nbsp;></h3>
                         </td>
                         <td>
                             <h3>+351 91782565</h3>
@@ -35,15 +37,15 @@
                     </tr>
                     <tr>
                         <td>
-                            <h3>&#9993;</h3>
+                            <h3>&#9993;&nbsp;></h3>
                         </td>
                         <td>
-                            <h3><a href = "mailto: jorgematias.dev@gmail.com">jorgematias.dev@gmail.com</a></h3>
+                            <h3><a href = "mailto:jorgematias.dev@gmail.com">jorgematias.dev@gmail.com</a></h3>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <h3><i class="fa fa-linkedin-square" style="font-size:24px"></i></h3>
+                            <h3><i class="fa fa-linkedin-square" style="font-size:24px"></i>&nbsp;></h3>
                         </td>
                         <td>
                             <h3><a href="https://www.linkedin.com/in/jorge-matias/">Perfil Linkedin</a></h3>
@@ -53,9 +55,9 @@
                 <hr/>
                 <h3>Caso tenha interesse em adquirir alguns dos equipamentos ou produtos mostrados no site contacte:</h3>
                 <table>
-                    <tr>
-                        <td>
-                            <h3>&#128222;</h3>
+                    <tr >
+                        <td >
+                            <h3>&#128222;&nbsp;></h3>
                         </td>
                         <td>
                             <h3>+351 964890956 - Luis Vieira</h3>
@@ -63,15 +65,15 @@
                     </tr>
                     <tr>
                         <td>
-                            <h3>&#9993;</h3>
+                            <h3>&#9993;&nbsp;></h3>
                         </td>
                         <td>
-                            <h3><a href = "mailto: luis.vieira@hidrovirtual.pt">luis.vieira@hidrovirtual.pt</a></h3>
+                            <h3><a href = "mailto:luis.vieira@hidrovirtual.pt">luis.vieira@hidrovirtual.pt</a></h3>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <h3><img src="../imagens/icon_hidrovitual.png" width="20px;"></h3>
+                            <h3><img src="../imagens/icon_hidrovitual.png" width="20" alt="HidroVirtual">&nbsp;></h3>
                         </td>
                         <td>
                             <h3><a href="https://www.hidrovirtual.pt/" target="blank">www.HidroVirtual.pt</a></h3>
@@ -79,10 +81,18 @@
                     </tr>
                     <tr>
                         <td>
-                            <h3><i class="fa fa-facebook" style="font-size:24px"></i></h3>
+                            <h3><i class="fa fa-facebook" style="font-size:24px"></i>&nbsp;></h3>
                         </td>
                         <td>
-                            <h3><a href="https://www.facebook.com/search/top/?q=hidrovirtual">HidroVirtual</a></h3>
+                            <h3><a href="https://www.facebook.com/search/top/?q=hidrovirtual">Facebook HidroVirtual</a></h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3><img src="../imagens/fb-messenger-icon.png" width="20" alt="Facebook Messenger">&nbsp;></h3>
+                        </td>
+                        <td>
+                            <h3><a href="https://www.facebook.com/search/top/?q=hidrovirtual">FB Messenger HidroVirtual</a></h3>
                         </td>
                     </tr>
                 </table>
@@ -91,7 +101,7 @@
                 
             </div>
             <div style="text-align: center;">
-                <input id="but_comentarios"  type="button" class="menu_button" value="Mostrar Marcas HTML e CSS Utilizadas" onclick="show_hide_comment()">
+                <input id="but_comentarios"  type="button" class="nav" value="Mostrar Marcas HTML e CSS Utilizadas" onclick="show_hide_comment()">
             </div>
         </div>      
 
@@ -101,7 +111,7 @@
         <!-- Inicio da divisória dos comentários ás marcas HTML e CSS -->
         <div id="comentarios" class="marcas" style="display: none;">
             <hr />
-            <h2><p>Marcas utilizadas na página:</p></h2>
+            <h2>Marcas utilizadas na página:</h2>
             <table class="tabela_marcas">
                 <tr>
                     <th>HTML</th>
@@ -109,7 +119,7 @@
                 </tr>
                 <tr>
                     <td id="marcas_html">
-                        <p><b>&lt;a href = "mailto: jorgematias.dev@gmail.com"&gt; - </b>Marcador já comentado, mas neste caso acrescentei o mailto:, utilizado no link para o email.</p>
+                        <p><b>&lt;a href = "mailto:jorgematias.dev@gmail.com"&gt; - </b>Marcador já comentado, mas neste caso acrescentei o mailto:, utilizado no link para o email.</p>
                     </td>
                     <td id="marcas_css">
                         <p>Nesta página apenas foi adicionado um link para a font-awesome de forma a ter os icones das redes sociais como classes</p>
